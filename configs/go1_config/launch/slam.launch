@@ -17,7 +17,10 @@
         </include>
 
         <node if="$(arg rviz)" name="rviz" pkg="rviz" type="rviz"
-            args="-d $(find champ_navigation)/rviz/navigate.rviz -f $(arg frame_prefix)map"
-            output="screen"/>
+            args="-d $(find ros_autonomous_slam)/rviz/turtlebot3_gmapping.rviz -f $(arg frame_prefix)map"
+            output="screen" />
     </group>
+
+    <include file="$(find ros_autonomous_slam)/launch/RRT.launch" />
+
 </launch>
