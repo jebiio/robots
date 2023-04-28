@@ -38,6 +38,8 @@
         <arg name="publish_foot_contacts"  value="$(arg publish_foot_contacts)" />
         <arg name="publish_joint_control"  value="$(arg publish_joint_control)" />
         <arg name="close_loop_odom"        value="$(arg close_loop_odom)" />
+        <arg name="publish_odom_tf"        value="false" />
+        <arg name="publish_local_odom_tf"  value="false" />
     </include>
     
     <group if="$(arg hardware_connected)">
