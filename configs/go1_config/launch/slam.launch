@@ -17,7 +17,7 @@
         </include>
 
         <node if="$(arg rviz)" name="rviz" pkg="rviz" type="rviz"
-            args="-d $(find ros_autonomous_slam)/rviz/turtlebot3_gmapping.rviz -f $(arg frame_prefix)map"
+            args="-d $(find go1_config)/rviz/m-explore.rviz -f $(arg frame_prefix)map"
             output="screen" />
     </group>
 
