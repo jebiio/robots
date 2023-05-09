@@ -10,5 +10,6 @@ cd ~/robots_ws/src
 git clone https://github.com/chvmp/robots.git
 cd ~/robots_ws/src/robots
 ./install_descriptions
+cd ~/robots_ws
 catkin_make
 ```
